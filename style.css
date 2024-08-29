@@ -1,7 +1,7 @@
 body{
     border: 0px;
     margin: 0px;
-    background-color: gray;
+    background-color: #ababab;
     color: black;
 }
 nav{
@@ -9,17 +9,33 @@ nav{
     height: 160px;
     justify-content: center;
     display: flex;
-    background-color: rgb(0, 153, 0);
+    background-color: #2e8b57;
+}
+.nav-left, .nav-right{
+ width: 10%;
+}
+.nav-mid{
+width: 80%;
+text-align: center;
+
+}
+.nav-mid span{
+    font-size: 40px;
+    /* display: inline-block; */
+    line-height: 160px;
+    vertical-align: middle;
 }
 img{
     width: 160px;
     height: inherit;
+    float:inline-end;
 }
 .inputs{
     margin-top: 50px;
     width: 100%;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 input{
     margin-right: 50px;
@@ -33,16 +49,37 @@ input{
     background-color: white;
     margin-right: 50px;
     margin-left: 50px;
+    margin-bottom: 50px;
     border-radius: 40px 10px 40px 10px;
     font-size: 40px;
 }
-span{
+.display-block{
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    border-radius: 40px 10px 40px 10px;
+    text-align: center;
+    font-size: 40px;
+    /* visibility: hidden; */
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+.input-block  span{
     transform: translate(-50%);
     margin-left: 50%;
 }
 button{
     transform: translate(-50%);
     margin-left: 50%;
+    border: 1px solid #ababab;
+    border-radius: 20px 5px 20px 5px;
+    padding: 5px;
+    background-color: #2e8b57;
+    color: black;
 }
 label{
     display: flex;

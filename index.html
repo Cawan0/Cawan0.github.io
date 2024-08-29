@@ -4,38 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Przelicznik</title>
 </head>
 <body>
     <nav>
-        <img src="./img/logo.jpg" alt="LOGO Pieprzyka">
+        <div class="nav-left"><img src="./img/logo.jpg" alt="LOGO Pieprzyka"></div><div class="nav-mid"><span>Przelicznik stanu paliw na stacji w Spalonej</span></div><div class="nav-right"></div>
     </nav>
     <div class="inputs">
-        <div class="input-block">
-            <label for="PB">
-                <span>PB95</span>
-            </label>
-                <input type="number" id="PB"><br>
-                <button>Sprawdź</button>
+        <div class="fuel-block">
+            <div class="input-block">
+                <label for="PB">
+                    <span>PB95</span>
+                </label>
+                    <input type="number" id="PB"><br>
+                    <button>Sprawdź</button>
+            </div>
+            <div class="display-block">
+                <div><span>PB95</span></div>
+                <span class="display-value">0</span>
+            </div>
         </div>
-        <div class="input-block">
-            <label for="ON">
-                <span>ON</span>
-            </label>
-                <input type="number" id="ON"><br>
-                <button>Sprawdź</button>
+
+        <div class="fuel-block">
+            <div class="input-block">
+                <label for="ON">
+                    <span>ON</span>
+                </label>
+                    <input type="number" id="ON"><br>
+                    <button>Sprawdź</button>
+
+            </div>
+            <div class="display-block">
+                <div><span>ON</span></div>
+                <span class="display-value">0</span>
+            </div>
 
         </div>
-        <div class="input-block">
-            <label for="TIR">
-                <span>TIR</span>
-            </label>
-                <input type="number" id="TIR"><br>
-                <button>Sprawdź</button>
+        <div class="fuel-block">
+            <div class="input-block">
+                <label for="TIR">
+                    <span>TIR</span>
+                </label>
+                    <input type="number" id="TIR"><br>
+                    <button>Sprawdź</button>
 
+            </div>
+            <div class="display-block">
+                <div><span>TIR</span></div>
+                <span class="display-value">0</span>
+            </div>
+            
         </div>
 
 
     </div>
 </body>
+<script src="app.js"></script>
 </html>
