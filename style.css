@@ -81,6 +81,9 @@ button{
     background-color: #2e8b57;
     color: black;
 }
+button:hover{
+    filter: brightness(140%);
+}
 label{
     display: flex;
 }
