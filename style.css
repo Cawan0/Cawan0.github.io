@@ -12,7 +12,10 @@ nav{
     background-color: #2e8b57;
 }
 .nav-left, .nav-right{
- width: 10%;
+ width: 160px;
+}
+.nav-left img{
+    width:160px
 }
 .nav-mid{
 width: 80%;
@@ -22,8 +25,11 @@ text-align: center;
 .nav-mid span{
     font-size: 40px;
     /* display: inline-block; */
-    line-height: 160px;
+    /* line-height: 160px; */
     vertical-align: middle;
+}
+.nav-mid img{
+    display: none;
 }
 img{
     width: 160px;
@@ -86,4 +92,75 @@ button:hover{
 }
 label{
     display: flex;
+}
+.display-block button{
+    position: absolute;
+    float: right;
+    margin: 0px 0px 0px 0px;
+}
+
+@media only screen and (max-width: 1004px){
+    .nav-mid span{
+        font-size: 30px;
+    }
+    .nav-right{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 689px){
+    .nav-mid span{
+        line-height: 160px;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .nav-mid span{
+        font-size: 30px;
+        /* line-height: 160px; */
+        padding-top: 34px;
+    }
+    .nav-mid{
+        width: 100%;
+
+    }
+    .nav-left{
+        width: 160px;
+        height: 160px;
+    }
+    .nav-right{
+        display: none;
+        /* width: 0px; */
+    }
+    .input-block{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (min-width: 440px) and (max-width: 688px){
+    .nav-mid span{
+        padding-top: 70px;
+        font-size:30px
+    }
+}
+
+@media only screen and (max-width: 369px){
+    .nav-mid span{
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 339px){
+    .nav-mid span{
+        display: none;
+    }
+    .nav-mid img{
+        display: block;
+        margin-left: 50%;
+        transform: translate(-50%);
+    }
+    .nav-left{
+        display: none;
+    }
 }
